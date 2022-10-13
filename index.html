@@ -636,7 +636,18 @@
 			</div>
 		</div>
 	</div>
-
+				
+fetch("https://api.apispreadsheets.com/data/NY1WK3nSrWRCjAcC/", {
+	method: "POST",
+	body: JSON.stringify({"data": {"name":"","place":""}}),
+}).then(res =>{
+	if (res.status === 201){
+		// SUCCESS
+	}
+	else{
+		// ERROR
+	}
+})
 	<footer id="fh5co-footer" role="contentinfo" style="background: url('images/background/repeat-background/witewall_3.png'); background-repeat:repeat ">
 		<div class="container">
 			<img class="flower-1" style="position: absolute; right: 0; bottom: 0" src="images/background/flowers/bottom-right-1.svg">
